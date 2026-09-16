@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519ea5537328b8d428a4077fa57bb420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreateFruits
-  _fruitPrefab: {fileID: 5483555987520951427, guid: 7641a64274395d34982d0201cc89ea38, type: 3}
+  _fruitPrefab: {fileID: 3901267380132916530, guid: 7641a64274395d34982d0201cc89ea38, type: 3}

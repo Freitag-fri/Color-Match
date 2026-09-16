@@ -1,33 +1,36 @@
 using UnityEngine;
 
-public class CreateFruits : MonoBehaviour
+namespace Assets.Scripts
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private float _spawnFruitsDelay;
-    private Vector2 _createDistanceRange = new Vector2(-8, 8);
-    private float timeSinceCreatedFruit;
-    private float creationHeight = 3.5f;
-    [SerializeField] private GameObject _fruitPrefab;
-
-    void Awake()
+    public class CreateFruits : MonoBehaviour
     {
-        _spawnFruitsDelay = 1.5f;
-        timeSinceCreatedFruit = _spawnFruitsDelay;
-    }
+        private float _spawnFruitsDelay;
+        private Vector2 _createDistanceRange = new Vector2(-8, 8);
+        private float timeSinceCreatedFruit;
+        private float creationHeight = 3.5f;
+        [SerializeField] private FruitController _fruitPrefab;
 
-    void Update()
-    {
-        timeSinceCreatedFruit += Time.deltaTime;
-        if(timeSinceCreatedFruit >= _spawnFruitsDelay)
+        void Awake()
         {
-            CreateFruit();
-            timeSinceCreatedFruit = 0;
+            _spawnFruitsDelay = 1.5f;
+            timeSinceCreatedFruit = _spawnFruitsDelay;
         }
-    }
 
-    private void CreateFruit()
-    {
-        var fruitPositionX = Random.Range(_createDistanceRange.x, _createDistanceRange.y);
-        Instantiate(_fruitPrefab, new Vector2(fruitPositionX, creationHeight), Quaternion.identity);
+        void Update()
+        {
+            timeSinceCreatedFruit += Time.deltaTime;
+            if(timeSinceCreatedFruit >= _spawnFruitsDelay)
+            {
+                CreateFruit();
+                timeSinceCreatedFruit = 0;
+            }
+        }
+
+        private void CreateFruit()
+        {
+            var fruitPositionX = Random.Range(_createDistanceRange.x, _createDistanceRange.y);
+            FruitController fruit = Instantiate(_fruitPrefab, new Vector2(fruitPositionX, creationHeight), Quaternion.identity);
+            fruit.initializer(3f);
+        }
     }
 }
