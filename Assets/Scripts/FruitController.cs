@@ -11,10 +11,15 @@ namespace Assets.Scripts
         private float _maxFallDistance = 30;
         private float _selfDestroyPosition;
         private bool isDestroyStarted;
+        private CollorManager.Collors _fruitCollor;
+        public CollorManager.Collors FruitCollor{ get; }
 
-        public void initializer(float speed)
+        public void initializer(float speed, CollorManager.Collors fruitCollor)
         {
             _speed = speed;
+            _fruitCollor = fruitCollor;
+            var sr = transform.GetComponent<SpriteRenderer>();
+            sr.color = CollorManager.GetSpriteCollor(_fruitCollor);
         }
 
         void Awake()

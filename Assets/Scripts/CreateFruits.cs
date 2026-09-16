@@ -12,6 +12,7 @@ namespace Assets.Scripts
 
         void Awake()
         {
+
             _spawnFruitsDelay = 1.5f;
             timeSinceCreatedFruit = _spawnFruitsDelay;
         }
@@ -30,7 +31,7 @@ namespace Assets.Scripts
         {
             var fruitPositionX = Random.Range(_createDistanceRange.x, _createDistanceRange.y);
             FruitController fruit = Instantiate(_fruitPrefab, new Vector2(fruitPositionX, creationHeight), Quaternion.identity);
-            fruit.initializer(3f);
+            fruit.initializer(3f, CollorManager.GetRandomCollor());
         }
     }
 }
