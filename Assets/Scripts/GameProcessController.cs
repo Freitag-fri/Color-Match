@@ -36,7 +36,10 @@ namespace Assets.Scripts
                     _isGameActive = false;
                     ShowResultPanel();
 
-                    // update record score if need
+                    if(SaveData.HighScore < _basketController.Score)
+                    {
+                       SaveData.HighScore =  _basketController.Score;
+                    }
                 }
             }
         }

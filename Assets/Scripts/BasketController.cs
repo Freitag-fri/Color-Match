@@ -36,9 +36,6 @@ namespace Assets.Scripts
         void Start()
         {
             _nextBasketCollor = CollorManager.GetRandomCollor();
-            // var color = CollorManager.GetSpriteCollor(_basketCollor);
-            // _sr.color = color;
-            // _background.color = color;
         }
 
         void Update()
