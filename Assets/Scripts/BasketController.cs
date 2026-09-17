@@ -13,12 +13,13 @@ namespace Assets.Scripts
         private float timeToNextChangeColor;
         public int Score { get => _score; }
         
+        [SerializeField] private AudioSource _audioSource;
         [SerializeField] private UpdateScoreUI _updateScoreUI;
         [SerializeField] private int _score;
         [SerializeField] private TextMeshProUGUI _scoreText;
         [SerializeField] private Slider _slider;
-        [SerializeField] private Image _fill;
-        [SerializeField] private Image _background;
+        private Image _fill;
+        private Image _background;
 
 
         void Awake()
@@ -56,6 +57,7 @@ namespace Assets.Scripts
             if(fruitController != null && !fruitController.IsDestroyStarted)
             {
                 int changeScore = 0;
+                _audioSource.Play();
                 if(fruitController.FruitCollor == _currentBasketCollor)
                     changeScore += 100;
                 else
