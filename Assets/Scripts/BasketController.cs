@@ -9,6 +9,7 @@ namespace Assets.Scripts
         private SpriteRenderer _sr;
         [SerializeField] private UpdateScoreUI _updateScoreUI;
         [SerializeField] private int _score;
+        public int Score { get => _score;}
         [SerializeField] private TextMeshProUGUI _scoreText;
 
 
@@ -27,7 +28,7 @@ namespace Assets.Scripts
         {
             var fruitController = other.GetComponent<FruitController>();
 
-            if(fruitController != null)
+            if(fruitController != null && !fruitController.IsDestroyStarted)
             {
                 int changeScore = 0;
                 if(fruitController.FruitCollor == _basketCollor)
