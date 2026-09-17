@@ -14,7 +14,6 @@ namespace Assets.Scripts
         [SerializeField] private GameObject _resultGamePanel;
         [SerializeField] private BasketController _basketController;
 
-
         void Start()
         {
             _isGameActive = true;
