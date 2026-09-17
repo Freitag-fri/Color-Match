@@ -216,3 +216,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1917504dcb371c4eb9e30b4978efff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasketController
+  _updateScoreUI: {fileID: 593039257362324597, guid: 866cd4123826c3a45b25905f83b4f4e6, type: 3}
+  _score: 0
