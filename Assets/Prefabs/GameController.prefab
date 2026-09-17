@@ -46,6 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreateFruits
   _fruitPrefab: {fileID: 3901267380132916530, guid: 7641a64274395d34982d0201cc89ea38, type: 3}
+  _fruits:
+  - {fileID: 11400000, guid: 8b823e7e0b4a12640a6440de0987a99a, type: 2}
+  - {fileID: 11400000, guid: 09111687cb12a7846801585a7300e70b, type: 2}
 --- !u!114 &-4966821782443348793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,3 +62,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameProcessController
   _scoreText: {fileID: 0}
+  _roundTimeText: {fileID: 0}
+  _resultGamePanel: {fileID: 0}
+  _basketController: {fileID: 0}
