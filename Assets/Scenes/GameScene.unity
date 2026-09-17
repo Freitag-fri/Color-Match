@@ -527,14 +527,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3864679154363795310, guid: cc1fc3231e83d4749aa0d32af8b6a841, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401596753722095826, guid: cc1fc3231e83d4749aa0d32af8b6a841, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7422356425562943797, guid: cc1fc3231e83d4749aa0d32af8b6a841, type: 3}
       propertyPath: m_Name
       value: Basket
+      objectReference: {fileID: 0}
+    - target: {fileID: 8406033943811214382, guid: cc1fc3231e83d4749aa0d32af8b6a841, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8577430642099361385, guid: cc1fc3231e83d4749aa0d32af8b6a841, type: 3}
       propertyPath: _scoreText
       value: 
       objectReference: {fileID: 656575770}
+    - target: {fileID: 8987435055959327489, guid: cc1fc3231e83d4749aa0d32af8b6a841, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
