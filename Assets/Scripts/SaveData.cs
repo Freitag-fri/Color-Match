@@ -2,7 +2,6 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    // Single access point for persistent data. Key strings live here and nowhere else.
     public static class SaveData
     {
         private const string highScoreKey = "HighScore";
