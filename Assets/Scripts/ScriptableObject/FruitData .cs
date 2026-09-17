@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Assets.Scripts
 {
     [CreateAssetMenu(fileName = "Fruits", menuName = "Scriptable Objects/Fruits")]
-    public class FruitData  : ScriptableObject
+    public class FruitData : ScriptableObject
     {
         [SerializeField] private string _id;
         [SerializeField] private FruitController _fruit;

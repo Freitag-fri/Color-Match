@@ -6,7 +6,7 @@ namespace Assets.Scripts
 {
     public class GameProcessController : MonoBehaviour
     {
-        float _roundDuration;
+        float _roundDuration = 20;
         float _roundTimeLeft;
         bool _isGameActive;
         [SerializeField] private TextMeshProUGUI _scoreText;
@@ -18,7 +18,6 @@ namespace Assets.Scripts
         void Start()
         {
             _isGameActive = true;
-            _roundDuration = 5;                     // change
             _roundTimeLeft = _roundDuration;
         }
 
