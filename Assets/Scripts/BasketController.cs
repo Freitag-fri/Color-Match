@@ -9,7 +9,7 @@ namespace Assets.Scripts
         private CollorManager.Collors _currentBasketCollor;
         private CollorManager.Collors _nextBasketCollor;
         private SpriteRenderer _sr;
-        private float changeColorPeriod;
+        private float changeColorPeriod = 4;
         private float timeToNextChangeColor;
         public int Score { get => _score; }
         
@@ -24,7 +24,6 @@ namespace Assets.Scripts
 
         void Awake()
         {
-            changeColorPeriod = 2; // update
             timeToNextChangeColor = 0;
             _sr = transform.GetComponent<SpriteRenderer>();
 
