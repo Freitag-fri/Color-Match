@@ -12,7 +12,7 @@ namespace Assets.Scripts
         private float _selfDestroyPosition;
         private bool isDestroyStarted;
         private CollorManager.Collors _fruitCollor;
-        public CollorManager.Collors FruitCollor{ get; }
+        public CollorManager.Collors FruitCollor{ get => _fruitCollor; }
 
         public void initializer(float speed, CollorManager.Collors fruitCollor)
         {
