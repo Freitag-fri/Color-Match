@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9039489475535165558}
   - component: {fileID: 8305165156154597560}
+  - component: {fileID: -4966821782443348793}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -45,3 +46,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreateFruits
   _fruitPrefab: {fileID: 3901267380132916530, guid: 7641a64274395d34982d0201cc89ea38, type: 3}
+--- !u!114 &-4966821782443348793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39690912873077715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3f202cf8edd644e8d456d2f4ad7a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameProcessController
+  _scoreText: {fileID: 0}

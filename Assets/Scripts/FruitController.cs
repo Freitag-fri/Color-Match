@@ -1,4 +1,3 @@
-using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -10,7 +9,7 @@ namespace Assets.Scripts
         private Rigidbody2D _rb;
         private float _maxFallDistance = 30;
         private float _selfDestroyPosition;
-        private bool isDestroyStarted;
+        public bool IsDestroyStarted { get; private set; }
         private CollorManager.Collors _fruitCollor;
         public CollorManager.Collors FruitCollor{ get => _fruitCollor; }
 
@@ -39,11 +38,11 @@ namespace Assets.Scripts
 
         public void DestroyFrouit()
         {
-            if(isDestroyStarted)
+            if(IsDestroyStarted)
                 return;
             
             transform.DOScale(Vector3.zero, 0.25f).OnComplete(() => Destroy(gameObject));
-            isDestroyStarted = true;
+            IsDestroyStarted = true;
         }
     }
 }
