@@ -463,6 +463,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!82 &1440218801 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1921812859808548177, guid: cc1fc3231e83d4749aa0d32af8b6a841, type: 3}
+  m_PrefabInstance: {fileID: 4191910766236969821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1909521878 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -4966821782443348793, guid: 2dc7f2aabf2998c4da1b553fc3362ec9, type: 3}
@@ -547,6 +552,10 @@ PrefabInstance:
       propertyPath: _scoreText
       value: 
       objectReference: {fileID: 656575770}
+    - target: {fileID: 8577430642099361385, guid: cc1fc3231e83d4749aa0d32af8b6a841, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1440218801}
     - target: {fileID: 8987435055959327489, guid: cc1fc3231e83d4749aa0d32af8b6a841, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
